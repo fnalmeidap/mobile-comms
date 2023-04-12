@@ -3,5 +3,5 @@ matplotlib
 seaborn
 pytorch
 numpy
-sklearn
+scikit-learn
 torchvision
