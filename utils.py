@@ -5,7 +5,7 @@ from torchvision.transforms import ToTensor
 def download_data():
     training_data = datasets.FashionMNIST(
         root="data",
-        train=False,
+        train=True,
         download=True,
         transform=ToTensor()
     )
