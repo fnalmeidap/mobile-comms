@@ -1,16 +1,21 @@
 import pandas as pd
 from torchvision import datasets
 from torch.utils.data import Dataset
+from torch import Tensor
 from torchvision.transforms import ToTensor
 
-DATA_FILE_PATH = "../../data/train.csv"
+DATA_FILE_PATH = "data/train.csv"
 
 class Reader:
-    def default_data(self):
-        data = Dataset(DATA_FILE_PATH) 
-        
+    @staticmethod
+    def default_data():
+        data = pd.read_csv(DATA_FILE_PATH) 
+        dataset = Tensor(data)
 
-    def download_data(self):
+        return dataset
+        
+    @staticmethod
+    def download_data():
         training_data = datasets.FashionMNIST(
             root="data",
             train=True,

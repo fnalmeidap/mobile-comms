@@ -2,7 +2,7 @@ import torch
 import torch.backends.mps
 
 from torch import nn
-from environment import ModelNN
+from mobcom.environment import ModelNN
 
 class NeuralNetwork(nn.Module):
     def __init__(self) -> None:
