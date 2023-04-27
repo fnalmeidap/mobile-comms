@@ -1,8 +1,10 @@
 pandas
 matplotlib
 seaborn
-pytorch
 numpy
 scikit-learn
-torchvision
 ipykernel
+scikit-optimize
+geopandas
+shapely
+folium
