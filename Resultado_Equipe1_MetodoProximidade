@@ -1,4 +1,4 @@
-ponto_id,lat,lon
+ponto_id,lat_pred,lon_pred
 0,-8.04342,-34.952
 3,-8.04342,-34.952
 8,-8.04342,-34.952
